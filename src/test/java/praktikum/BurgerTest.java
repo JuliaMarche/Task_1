@@ -76,7 +76,7 @@ public class BurgerTest {
             "0,3",
             "1,4"
     })
-    public void getPriceParameterized(int bunIndex, int ingredientIndex) {
+    public void getPriceTest(int bunIndex, int ingredientIndex) {
         Bun dbBun = database.availableBuns().get(bunIndex);
         Ingredient dbIngredient = database.availableIngredients().get(ingredientIndex);
 
@@ -95,7 +95,7 @@ public class BurgerTest {
             "1,1,5",
             "0,2,3"
     })
-    public void getReceiptParameterized(int bunIndex, int ingredientIndexFir, int ingredientIndexSec) {
+    public void getReceiptTest(int bunIndex, int ingredientIndexFir, int ingredientIndexSec) {
         Bun dbBun = database.availableBuns().get(bunIndex);
         Ingredient dbIngredientFirst = database.availableIngredients().get(ingredientIndexFir);
         Ingredient dbIngredientSecond = database.availableIngredients().get(ingredientIndexSec);
